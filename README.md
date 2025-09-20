@@ -1,6 +1,6 @@
 # Measuring and Guiding Monosemanticity
 
-Sublimetary material for "Measuring and Guiding Monosemanticity".
+Supplementary material for the paper ["Measuring and Guiding Monosemanticity"](https://arxiv.org/abs/2506.19382).
 
 The repository consits of a number of scripts that help reproduce the experiments and corresponding results of the paper. 
 
@@ -48,3 +48,17 @@ If the SAEs where trained with the inclued train script, it suffices to insert t
 The repository of [ICV](https://github.com/shengliu66/ICV) was adapted to acomodate DiffVec and the datasets mentioned in the paper.
 The repository of [Model Arithmetic](https://github.com/eth-sri/language-model-arithmetic) already included PreAdd but needed modification in order to accomodate all datasets from the paper.
 Hyperparameters of all 4 methods can be found in Appendix D. 
+
+
+# Citation
+
+```bibtex
+@inproceedings{harle2025monosemanticity,
+    title = {Measuring and Guiding Monosemanticity},
+    author = {Ruben H{\"a}rle and Felix Friedrich and Manuel Brack and Stephan W{\"a}ldchen and Bj{\"o}rn Deiseroth and
+    Patrick Schramowski and Kristian Kersting},
+    booktitle = {Advances in Neural Information Processing Systems},
+    year = {2025},
+    note = {Spotlight}
+    }
+```
