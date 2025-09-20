@@ -1,0 +1,24 @@
+project: Measuring_and_Guiding_Monosemanticity
+environment:
+  force_pull_image: true
+  image: fitting_image
+resources:
+  slots_per_trial: 1
+searcher:
+  max_length:
+    epochs: 100
+checkpoint_storage:
+  host_path: ./ckpt/SP-Block_v2/
+hyperparameters:
+  global_batch_size: 2048
+  config_path:
+    type: categorical
+    vals:
+      - ./llama3_SAE/SAE_config/llama3-l24576-b11-k2048.json
+  cond_loss_scaling:
+    type: categorical
+    vals:
+      - 0 # Vanilla SAE
+      - 1 # G-SAE
+name: Train_SAEs_B11_SP
+entrypoint: poetry run python3 -m determined.launch.torch_distributed python3 ./train/determined_trails.py

@@ -1,0 +1,1 @@
+{"batch_size": 2048, "ds_path": "./datasets_v2/llama3_70B-RTP_split-B62-block", "factor": 3, "k": 32, "lr": 1e-05, "max_epochs": 100, "n_inputs": 8192, "activation": "topk-sigmoid"}

@@ -1,0 +1,1 @@
+{"batch_size": -1, "ds_path": "pretrained/llama3-pretrained-B11-block", "factor": 32, "k": 192, "lr": 0, "max_epochs": 25, "n_inputs": 4096, "activation": "topk"}
